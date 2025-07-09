@@ -32,6 +32,12 @@ export default function PostPage({
       <Header name={globalData.name} />
       <article className="px-6 md:px-0">
         <header>
+          <Link href="/">
+            <a className="flex items-center mb-6 text-primary hover:underline focus:outline-none focus:ring-2">
+              <ArrowIcon className="transform rotate-180 mr-2" />
+              Voltar para o início
+            </a>
+          </Link>
           <h1 className="text-3xl md:text-5xl dark:text-white text-center mb-12">
             {posts?.title}
           </h1>
