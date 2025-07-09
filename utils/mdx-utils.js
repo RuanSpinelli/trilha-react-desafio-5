@@ -1,7 +1,7 @@
 import { api } from '../services/api'
 
 export const getPosts = async () => {
-    const {data} = await api.get('/posts'); 
+    const {data} = await api.get('/posts?select=*'); 
 
     if(data){
         return data;
